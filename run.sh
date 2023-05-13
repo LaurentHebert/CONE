@@ -1,6 +1,6 @@
 #! /bin/bash
 
-python3 decomposition $1
+python3 decomposition -n $1
 
 g++ -std=c++11 -O3 -o tevol_source_sis_cone ./tevol_source_sis_cone.cpp $(gsl-config --cflags) $(gsl-config --libs)
 
